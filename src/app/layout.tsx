@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono as FontSans } from "next/font/google"
+import { Cabin_Sketch as FontSans } from "next/font/google";
 import "./globals.css";
 
-import { cn } from "@/lib/utils"
- 
+import { cn } from "@/lib/utils";
+
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
-})
+  weight: ["400", "700"],
+});
 
 export const metadata: Metadata = {
   title: "Learn-Shadcn.iu",
@@ -20,11 +21,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={cn(
+    <html lang="en" className="{fontSans.variable}">
+      <body
+        className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable)}>
-          {children}</body>;
+          fontSans.className,
+          fontSans.variable
+        )}
+      >
+        {children}
+      </body>
+      ;
     </html>
   );
 }
