@@ -18,6 +18,7 @@ const links = [
   { name: "checkbox", href: "checkbox" },
   { name: "command", href: "command" },
   { name: "aceternity", href: "aceternity" },
+  { name: "Combobox", href: "Combobox" },
   
 
 ].sort((a, b) => a.name.localeCompare(b.name));

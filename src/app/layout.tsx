@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Cabin_Sketch as FontSans } from "next/font/google";
+import { JetBrains_Mono as SlabSerif } from "next/font/google";
 import "./globals.css";
 
 import { cn } from "@/lib/utils";
 
-const fontSans = FontSans({
+const fontSans = SlabSerif({
   subsets: ["latin"],
   variable: "--font-sans",
-  weight: ["400", "700"],
+  weight: ["700", "400"],
 });
 
 export const metadata: Metadata = {
