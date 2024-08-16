@@ -19,6 +19,8 @@ const links = [
   { name: "command", href: "command" },
   { name: "aceternity", href: "aceternity" },
   { name: "Combobox", href: "Combobox" },
+  { name: "context menú", href: "context-menu" },
+  
   
 
 ].sort((a, b) => a.name.localeCompare(b.name));
