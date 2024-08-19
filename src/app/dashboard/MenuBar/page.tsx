@@ -23,7 +23,12 @@ export default function Page() {
         <MenubarMenu>
           <MenubarTrigger>File</MenubarTrigger>
           <MenubarContent>
-            <MenubarItem>
+            <MenubarItem
+            onClick={ 
+              () => {
+                window.open('https://www.google.com', '_blank');
+              }
+            }>
               New Tab <MenubarShortcut>⌘T</MenubarShortcut>
             </MenubarItem>
             <MenubarItem>
